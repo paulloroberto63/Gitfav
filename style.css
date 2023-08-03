@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%
+}
+
+
+body {
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: aliceblue;
+}
+
+#app {
+    margin: 0 auto;
+    padding: 1.5rem;
+    max-width: 800px;;
+}
+
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 3rem;
+}
+
+.search{
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+  }
+    
+  .search input {
+    color: #7C7C8A;
+    border: transparent;
+    background: #06161B;
+    width: clamp(10rem, 27rem + 10vw, 43rem);
+    padding: 1rem; 
+    outline: 0;
+}
+
+.searchAdd {
+    display: flex;
+    background: #065E7C;
+    align-items: center;
+    padding: 1.2rem 3.2rem;
+    gap: .8rem;
+    border-radius: .5rem;
+  
+    width: 17.0rem;
+    height: 4.8rem;
+  }
+
+
+  .searchAdd button{
+    background: none;
+    border: none;
+    
+    line-height: 24px;
+    font-weight: bold;
+    
+    color: white;
+
+  }
+
+  
+.searchAdd:hover,
+.searchAdd:hover button,
+.searchAdd:hover svg path{
+  color: #065E7C;
+  background: white;
+  fill: #065E7C;
+
+  cursor: pointer;
+
+}
+  
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8rem;
+    
+}
+
+
+table * {
+
+font-size: 1.4rem;
+}
+
+td.user img {
+    width: 5rem;
+    height: 5rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+table th{
+    background-color: #092D38;
+    
+    padding: 1.4rem 1.4rem 1.4rem 1.4rem;
+    text-align: left;
+    font-weight: normal;
+}
+
+.search {
+    width: 35%;
+}
+ 
+table th:first-child {
+    border-top-left-radius: .4rem;
+  }
+
+
+  table th:last-child {
+    border-top-right-radius: .4rem;
+  }
+
+
+  table tr:nth-child(even) {
+    background: #06161B;
+  }
+  
+  table tr:nth-child(odd) {
+    background: #132d33;
+  }
+
+
+  table td:first-child{
+    border-bottom-left-radius: .4rem;
+  }
+
+  table td:last-child {
+    border-bottom-right-radius: .4rem;
+  }
+
+
+table td {
+    padding: 1.4rem;
+    text-align: left;
+}
+
+td.user a {
+    text-decoration: none;
+    color: #E1E1E6;
+}
+
+td.user a p {
+    font-weight: bold;
+}
+
+td.remove {
+    color: #F75A68;
+    cursor: pointer;
+}
+
+.remove:hover {
+    color: #f7404f;
+}
+
+td {
+    border-top: solid 1px #316672;
+}
+
+
